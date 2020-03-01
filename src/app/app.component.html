@@ -1,0 +1,15 @@
+<div class="container">
+
+	<hello name="{{ name }}"></hello>
+
+	<div class="row">
+		<span class="title">Before pipe:</span>
+		<span class="content">{{ content }}</span>
+	</div>
+
+	<div class="row">
+		<span class="title">After pipe:</span>
+		<span class="content">{{ content | slugify }}</span>
+	</div>
+
+</div>

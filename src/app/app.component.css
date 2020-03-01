@@ -1,0 +1,17 @@
+** {
+  font-family: Lato;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.row .title {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: dimgray
+}
