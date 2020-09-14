@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular Slugify Pipe';
-  content = '¡En alguna ocasión soy alguién muy bueno!';
+  name = 'Angular Unique Slug Generator';
+  content = '¡Este artículo habla sobre Angular y sus slugs potentes!';
 }

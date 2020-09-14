@@ -1,6 +1,6 @@
 <div class="container">
 
-	<hello name="{{ name }}"></hello>
+  <h1 class="title">{{name}}</h1>
 
 	<div class="row">
 		<span class="title">Before pipe:</span>
@@ -9,7 +9,18 @@
 
 	<div class="row">
 		<span class="title">After pipe:</span>
-		<span class="content">{{ content | slugify }}</span>
+		<span class="content">
+      {{ 
+        content | slugify: {
+          unique: true,
+          uniqueOptions: {
+            randomLength: 6,
+            chars: ['lowercase', 'numeric'],
+            separator: '-'
+          }
+        }
+      }}
+    </span>
 	</div>
 
 </div>
